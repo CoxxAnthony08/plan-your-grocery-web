@@ -1,30 +1,6 @@
-<template>
-  <div>
-      <v-text-field
-            label="User Name"
-          ></v-text-field>
-           <v-text-field
-           label="Password"
-            type="password"
-          ></v-text-field>
-          <v-btn
-          @click="login"
-  elevation="2"
->Log in</v-btn>
-  </div>
-</template>
-
 <script>
+import Login from '@/components/login/Login'
 export default {
-  layout:'login',
-    methods: {
-        login(){
-            this.$router.push('/home')
-        }
-    }
+  extends: Login
 }
 </script>
-
-<style>
-
-</style>
