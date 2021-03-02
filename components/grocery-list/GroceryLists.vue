@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>Grocery List</h1>
+    <h1 class="mb-3 display-1">GROCERY LIST</h1>
   </v-container>
 </template>
 
