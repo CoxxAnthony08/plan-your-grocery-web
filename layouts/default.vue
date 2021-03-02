@@ -5,8 +5,32 @@
       app
       color="elevation-0"
     >
-      <v-toolbar-title @click="goto('/home')">Plan-your-Grocery</v-toolbar-title>
+      <v-tooltip
+        bottom
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-toolbar-title v-bind="attrs" v-on="on" @click="goto('/home')" class="cursor-pointer">Plan-your-Grocery</v-toolbar-title>
+        </template>
+        <span>Home</span>
+      </v-tooltip>
       <v-spacer />
+      <v-tooltip
+        bottom
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            icon
+            v-bind="attrs"
+            v-on="on"
+            @click.prevent="goto('/home/submit-a-product')"
+          >
+            <v-icon>
+              mdi-plus-box
+            </v-icon>
+          </v-btn>
+        </template>
+        <span>Submit a Product</span>
+      </v-tooltip>
       <v-tooltip
         bottom
       >
