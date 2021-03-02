@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <h1 class="mb-3 display-1">Submit a Product</h1>
+    <span class="button">Note: All products submitted will be reviewed.</span>
     <v-row>
       <v-col cols="3">
         <v-text-field label="Product Name">
