@@ -22,23 +22,6 @@
             icon
             v-bind="attrs"
             v-on="on"
-            @click.prevent="goto('/home/submit-a-product')"
-          >
-            <v-icon>
-              mdi-plus-box
-            </v-icon>
-          </v-btn>
-        </template>
-        <span>Submit a Product</span>
-      </v-tooltip>
-      <v-tooltip
-        bottom
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            icon
-            v-bind="attrs"
-            v-on="on"
             @click.prevent="goto('/grocery-list')"
           >
             <v-icon>
